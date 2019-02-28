@@ -1,0 +1,14 @@
+.vs/
+
+.project
+.gitmodules
+.classpath
+.settings
+.idea
+*.iml
+target
+npm-debug.log
+node_modules/
+build/
+.DS_Store
+.vscode

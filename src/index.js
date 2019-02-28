@@ -1,18 +1,13 @@
-var state = {
-  pageName: 'pageA'
-}
-var init = function(){
-  if(state.pageName == 'pageA'){
-    import(/* webpackChunkName: 'pageA'*/ "./pages/pageA").then(({pageA}) => {
-      var myClass = new pageA();
-      myClass.load();
-    });
-  }else{
-    import(/* webpackChunkName: 'pageB'*/ "./pages/pageB").then(function(pageB) {
-      console.log(pageB);
-    });
-  }
-}
-init();
-window.state = state;
-window.init = init;
+import Vue from 'vue'
+import App from '@/App'
+import '@/assets/less/index.less'
+
+const myApp = new Vue({
+  el: '#app',
+  components: {
+    App
+  },
+  template: '<App/>'
+})
+window.app = myApp
+export default myApp
