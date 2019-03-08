@@ -5,7 +5,7 @@
     </div>
     <div class="k-detail">
       <div class="k-detail-title">
-        <span class="k-detail-icon">
+        <span class="k-detail-icon k-icon-info">
           <i class="k-font k-font-user"></i>
         </span>
         <span class="k-value">自我评价</span>
@@ -20,7 +20,7 @@
     </div>
     <div class="k-detail">
       <div class="k-detail-title">
-        <span class="k-detail-icon">
+        <span class="k-detail-icon k-icon-work">
           <i class="k-font k-font-work"></i>
         </span>
         <span class="k-value">工作经历</span>
@@ -80,7 +80,7 @@
     </div>
     <div class="k-detail">
       <div class="k-detail-title">
-        <span class="k-detail-icon">
+        <span class="k-detail-icon k-icon-education">
           <i class="k-font k-font-education"></i>
         </span>
         <span class="k-value">教育经历</span>
@@ -121,6 +121,33 @@ export default {
 @edge-length: 20px;
 @icon-height: 10px;
 @icon-width: sqrt(pow(@edge-length, 2) - pow(@icon-height, 2));
+.k-icon-info{
+  background: #909399;
+  &:before{
+    border-bottom-color: #909399;
+  }
+  &:after{
+    border-top-color:#909399;
+  }
+}
+.k-icon-work{
+  background: #E6A23C;
+  &:before{
+    border-bottom-color: #E6A23C;
+  }
+  &:after{
+    border-top-color:#E6A23C;
+  }
+}
+.k-icon-education{
+  background: #409EFF;
+  &:before{
+    border-bottom-color: #409EFF;
+  }
+  &:after{
+    border-top-color:#409EFF;
+  }
+}
 .k-right{
   width: 820px;
   align-self: stretch;
@@ -134,7 +161,6 @@ export default {
       display: block;
       width: 34px;
       height: @edge-length;
-      background: #f56c6c;
       text-align: center;
       left: -17px;
       .k-font{
@@ -144,7 +170,8 @@ export default {
       &:before{
         display: block;
         position: absolute;
-        border-bottom: @icon-height solid #f56c6c;
+        border-bottom-width: @icon-height;
+        border-bottom-style: solid;
         border-left: @icon-width solid transparent;
         border-right: @icon-width solid transparent;
         content: '';
@@ -154,7 +181,8 @@ export default {
       &:after{
         display: block;
         position: absolute;
-        border-top: @icon-height solid #f56c6c;
+        border-top-width: @icon-height;
+        border-top-style: solid;
         border-left: @icon-width solid transparent;
         border-right: @icon-width solid transparent;
         content: '';
@@ -171,7 +199,7 @@ export default {
 .k-text{
   line-height: 30px;
   text-indent: 2em;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 .k-table{
   margin: 20px 30px;

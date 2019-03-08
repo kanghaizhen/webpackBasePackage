@@ -29,7 +29,7 @@ export default {
 </script>
 <style lang="less">
 .k-list{
-  margin-top: 20px;
+  margin: 20px;
   .k-list-ul{
     list-style: none;
     padding: 0 10px;

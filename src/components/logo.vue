@@ -14,7 +14,8 @@ export default {
 </script>
 <style lang="less">
 .k-user{
-  margin: 20px 0;
+  padding: 20px 0;
+  background: #eeeeee;
 }
 .k-user-icon{
   width: 204px;

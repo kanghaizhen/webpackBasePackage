@@ -25,7 +25,6 @@ export default {
   padding: 0 20px;
   line-height: 40px;
   position: relative;
-  margin:20px 0;
   background: @color-default;
   color: #ffffff;
   &:after{
