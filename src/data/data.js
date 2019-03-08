@@ -1,10 +1,10 @@
 const userInfo = {
   name: 'kanghz',
-  school: '郑州',
+  school: '郑州信息科技职业学院',
   education: '大专',
   major: '计算机',
   phone: 13939001159,
-  address: '上海市浦东新区',
+  address: '上海市浦东新区鹤永路750弄',
   email: 'kanghaizen@qq.com',
   github: 'kanghz.github.io'
 }
