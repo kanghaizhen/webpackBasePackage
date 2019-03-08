@@ -59,7 +59,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash:4].css",
-      chunkFilename: "css.[name].[id].css"
+      chunkFilename: "css/[name].[id].css"
     }),
     new OptimizeCssAssetsPlugin(),
     new UglifyJsPlugin(),

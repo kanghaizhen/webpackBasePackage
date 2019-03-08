@@ -19,9 +19,7 @@ export default {
 @color-default: #f56c6c;
 @color-primary: #f56c6c;
 @color-success: #67c23a;
-.k-info{
-  color: #ffffff;
-}
+
 .k-title{
   height: 40px;
   padding: 0 20px;
@@ -29,6 +27,7 @@ export default {
   position: relative;
   margin:20px 0;
   background: @color-default;
+  color: #ffffff;
   &:after{
     display: block;
     content: '';

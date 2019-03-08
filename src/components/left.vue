@@ -19,7 +19,8 @@ export default {
 <style lang="less">
 .k-left{
   width: 380px;
-  background: #2f3a40;
+  background: #fff;
   align-self: stretch;
+  border-right: 1px solid #ddd;
 }
 </style>

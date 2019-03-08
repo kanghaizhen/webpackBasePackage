@@ -1,7 +1,7 @@
 <template>
   <div class="k-user">
     <div class="k-user-icon">
-      <img class="k-user-img" src='../assets/images/user.jpg' alt="" width="240" height="240">
+      <img class="k-user-img" src='../assets/images/user.jpg' alt="" width="200" height="200">
     </div>
     <div class="k-user-name">Kanghz</div>
   </div>
@@ -17,7 +17,7 @@ export default {
   margin: 20px 0;
 }
 .k-user-icon{
-  width: 244px;
+  width: 204px;
   margin: 0 auto;
   border-radius: 1000px;
   overflow: hidden;
@@ -25,13 +25,12 @@ export default {
   .k-user-img {
     display: block;
     border-radius: 1000px;
-    border: 2px solid #000;
+    border: 2px solid #ddd;
   }
 }
 .k-user-name{
   margin: 20px 0;
   text-align: center;
   font-size: 24px;
-  color: #ffffff;
 }
 </style>

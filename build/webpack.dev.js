@@ -42,9 +42,7 @@ module.exports = {
       {
         test: /\.(css|less)$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'less-loader'
         ]

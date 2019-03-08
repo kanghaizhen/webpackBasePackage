@@ -1,17 +1,19 @@
 <template>
   <div class="k-container">
     <k-left :userInfo="userInfo" :skills="skills"></k-left>
-    <div style="height:500px;align-self: stretch;"></div>
+    <k-right></k-right>
   </div>
 </template>
 
 <script>
 import kLeft from '@/components/left'
+import kRight from '@/components/right'
 import { userInfo, skills } from '@/data/data'
 export default {
   name: 'App',
   components: {
-    kLeft
+    kLeft,
+    kRight
   },
   data() {
     return {
